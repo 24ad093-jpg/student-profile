@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Student Profile Dashboard</title>
+    <meta
+      name="description"
+      content="Student Profile Dashboard for a modern college mini project."
+    />
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-..."
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="page-shell">
+      <header class="topbar">
+        <div class="brand">
+          <i class="fa-solid fa-graduation-cap"></i>
+          <span>Student Portal</span>
+        </div>
+
+        <nav class="navbar" aria-label="Main navigation">
+          <a href="#home"><i class="fa-solid fa-house"></i> Home</a>
+          <a href="#profile"><i class="fa-solid fa-user"></i> Profile</a>
+          <a href="#academics"><i class="fa-solid fa-book-open"></i> Academics</a>
+          <a href="#attendance"><i class="fa-solid fa-calendar-check"></i> Attendance</a>
+          <a href="#contact"><i class="fa-solid fa-envelope"></i> Contact</a>
+        </nav>
+
+        <div class="topbar-actions">
+          <label class="search-box" aria-label="Search student content">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <input id="searchBox" type="search" placeholder="Search..." />
+          </label>
+
+          <button id="themeToggle" class="theme-toggle" aria-label="Toggle dark mode">
+            <i class="fa-solid fa-moon"></i>
+          </button>
+        </div>
+      </header>
+
+      <main>
+        <section id="home" class="hero card">
+          <div class="hero-content">
+            <p class="eyebrow">Student Profile Dashboard</p>
+            <h1>Riyal Sterling C</h1>
+            <div class="profile-meta">
+              <div><span>Register No</span><strong>24AD093</strong></div>
+              <div><span>Department</span><strong>Artificial Intelligence and Data Science</strong></div>
+              <div><span>Semester</span><strong>5th Semester</strong></div>
+              <div><span>College</span><strong>KPR Institute of Engineering and Technology Management Quota</strong></div>
+            </div>
+            <div class="hero-badges">
+              <span class="badge">Merit Scholar</span>
+            </div>
+          </div>
+
+          <input id="photoInput" type="file" accept="image/*" hidden />
+          <div class="hero-photo placeholder-photo" aria-label="Profile photo placeholder">
+            <span class="photo-placeholder-text">Upload Your Photo</span>
+            <label for="photoInput" class="upload-button">
+              <i class="fa-solid fa-upload"></i> Upload Photo
+            </label>
+          </div>
+        </section>
+
+        <section class="dashboard-grid">
+          <article id="profile" class="card detail-card" data-title="Personal Details">
+            <div class="card-header">
+              <h2><i class="fa-solid fa-user"></i> Personal Details</h2>
+            </div>
+            <ul class="detail-list">
+              <li><span>Date of Birth</span><strong>14 March 2007</strong></li>
+              <li><span>Gender</span><strong>Female</strong></li>
+              <li><span>Blood Group</span><strong>B+</strong></li>
+              <li><span>Address</span><strong>Coimbatore, Tamil Nadu</strong></li>
+            </ul>
+          </article>
+
+          <article id="academics" class="card detail-card" data-title="Academic Details">
+            <div class="card-header">
+              <h2><i class="fa-solid fa-book"></i> Academic Details</h2>
+            </div>
+            <ul class="detail-list">
+              <li><span>Current CGPA</span><strong>6.34</strong></li>
+              <li><span>Semester</span><strong>5th Semester</strong></li>
+              <li><span>School Studied</span><strong>Sree Vetrivikas Matric Hr Sec School</strong></li>
+              <li><span>Placement Status</span><strong>Eligible</strong></li>
+            </ul>
+          </article>
+
+          <article class="card detail-card" data-title="Skills">
+            <div class="card-header">
+              <h2><i class="fa-solid fa-star"></i> Skills</h2>
+            </div>
+            <div class="skills-wrap">
+              <span class="chip">HTML</span>
+              <span class="chip">CSS</span>
+              <span class="chip">JavaScript</span>
+              <span class="chip">Python</span>
+              <span class="chip">UX Design</span>
+              <span class="chip">Team Leadership</span>
+            </div>
+          </article>
+
+          <article class="card detail-card" data-title="Achievements">
+            <div class="card-header">
+              <h2><i class="fa-solid fa-trophy"></i> Achievements</h2>
+            </div>
+            <ul class="detail-list">
+              <li><span>Hackathon</span><strong>1st Place</strong></li>
+              <li><span>Project Expo</span><strong>Best UI Award</strong></li>
+              <li><span>Campus Quiz</span><strong>Runner-Up</strong></li>
+            </ul>
+          </article>
+
+          <article id="contact" class="card detail-card" data-title="Contact Information">
+            <div class="card-header">
+              <h2><i class="fa-solid fa-address-card"></i> Contact Information</h2>
+            </div>
+            <ul class="detail-list">
+              <li><span>Email</span><strong>riyal.sterling@email.com</strong></li>
+              <li><span>Phone</span><strong>+91 98765 43210</strong></li>
+              <li><span>LinkedIn</span><strong>linkedin.com/riyalsterling</strong></li>
+              <li><span>GitHub</span><strong>github.com/riyalsterling</strong></li>
+            </ul>
+          </article>
+        </section>
+
+        <section class="table-section card">
+          <div class="card-header">
+            <h2><i class="fa-solid fa-school"></i> Educational Background</h2>
+          </div>
+
+          <div class="table-wrap">
+            <table>
+              <thead>
+                <tr>
+                  <th>Qualification</th>
+                  <th>School Studied</th>
+                  <th>Marks</th>
+                  <th>Percentage</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>10th</td>
+                  <td>Sree Vetrivikas Matric Hr Sec School</td>
+                  <td>478 / 500</td>
+                  <td>95.6%</td>
+                </tr>
+                <tr>
+                  <td>12th</td>
+                  <td>Sree Vetrivikas Matric Hr Sec School</td>
+                  <td>477 / 600</td>
+                  <td>79.5%</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+
+
+        <section id="attendance" class="stats-grid">
+          <article class="card progress-card">
+            <div class="card-header">
+              <h2><i class="fa-solid fa-chart-column"></i> Attendance</h2>
+            </div>
+            <div class="progress-labels">
+              <span>Attendance</span>
+              <strong>92%</strong>
+            </div>
+            <div class="progress-track">
+              <div class="progress-bar attendance-bar"></div>
+            </div>
+          </article>
+
+          <article class="card progress-card">
+            <div class="card-header">
+              <h2><i class="fa-solid fa-award"></i> CGPA</h2>
+            </div>
+            <div class="progress-labels">
+              <span>Current CGPA</span>
+              <strong>6.34</strong>
+            </div>
+            <div class="progress-track">
+              <div class="progress-bar cgpa-bar"></div>
+            </div>
+          </article>
+        </section>
+      </main>
+
+      <footer class="site-footer">
+        <div class="footer-brand">© 2026 Student Portal. All rights reserved.</div>
+        <div class="social-links">
+          <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+          <a href="#" aria-label="Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+        </div>
+      </footer>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
